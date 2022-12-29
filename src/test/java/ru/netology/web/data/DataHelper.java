@@ -6,6 +6,10 @@ public class DataHelper {
 
     private DataHelper() {}
 
+    public static void getSecondCardInfo(AuthInfo authInfo) {
+
+    }
+
     @Value
     public static class AuthInfo {
         private String login;
