@@ -10,17 +10,6 @@ import static com.codeborne.selenide.Selenide.open;
 public class TransferTest {
 
     @Test
-    void shouldTransferMoneyBetweenOwnCards() {
-        open("http://localhost:9999");
-        var loginPage = new LoginPage();
-        var authInfo = DataHelper.getAuthInfo();
-        var verificationPage = loginPage.validLogin(authInfo);
-        var verificationCode = DataHelper.getVerificationCodeFor(authInfo);
-        verificationPage.validVerify(verificationCode).getCards();
-        System.out.println();
-    }
-
-    @Test
     void shouldTransferMoneyOnTheFirstCard() {
         open("http://localhost:9999");
         var loginPage = new LoginPage();

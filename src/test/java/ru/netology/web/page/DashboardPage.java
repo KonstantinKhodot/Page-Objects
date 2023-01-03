@@ -43,15 +43,4 @@ public class DashboardPage {
         val value = text.substring(start + balanceStart.length(), finish);
         return Integer.parseInt(value);
     }
-
-    public List<String> getCards() {
-        ElementsCollection cardElements = $$("ul li[class=list__item] div");
-        List<String> cards = new ArrayList<>();
-
-        for (SelenideElement card : cardElements) {
-            cards.add(card.getAttribute("data-test-id"));
-        }
-
-        return cards;
-    }
 }

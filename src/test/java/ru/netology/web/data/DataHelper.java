@@ -32,4 +32,10 @@ public class DataHelper {
     public static VerificationCode getVerificationCodeFor(AuthInfo authInfo) {
         return new VerificationCode("12345");
     }
+
+    public class TransferCard {
+        public String getCardNumber() {
+            return null;
+        }
+    }
 }
